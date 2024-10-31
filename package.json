@@ -1,7 +1,19 @@
 {
+  "name": "suz-web-screp",
+  "version": "1.0.0",
+  "description": "Servidor Express para upload de imagens",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.21.1",
     "helmet": "^8.0.0",
     "multer": "^1.4.5-lts.1"
-  }
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Pedro Moura",
+  "license": "MIT"
 }

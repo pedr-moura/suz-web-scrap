@@ -7,6 +7,9 @@ const app = express();
 // Middleware de segurança
 app.use(helmet());
 
+// Middleware para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Configuração do multer para uploads
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
